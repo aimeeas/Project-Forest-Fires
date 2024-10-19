@@ -1,6 +1,6 @@
 ---
 title: "Forest Fires Analysis"
-author: "Your Name"
+author: "Aimee"
 date: "2024-10-19"
 output: github_document
 ---
