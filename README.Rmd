@@ -117,5 +117,6 @@ forestfires_area %>%
 ## Conclusion
 
 In this analysis, we explored the number of fires by month and day, visualized multiple variables, and analyzed fire severity. This helps in better understanding the conditions under which forest fires occur and their potential severity.
+rmarkdown::render("README.Rmd", output_format = "github_document")
 
 
