@@ -147,21 +147,3 @@ visualized multiple variables, and analyzed fire severity. This helps in
 better understanding the conditions under which forest fires occur and
 their potential severity. rmarkdown::render(“README.Rmd”, output_format
 = “github_document”)
-
-
-
-
-happiness_selected <- happiness %>%
-  select(3:5)
-
-happiness_dag <- dagitty('
-dag {
-bb="0,0,1,1"
-gdp_per_capita [exposure,pos="0.381,0.476"]
-happiness_score [outcome,pos="0.474,0.179"]
-social_support [pos="0.642,0.445"]
-gdp_per_capita -> happiness_score
-social_support -> happiness_score
-}
-')
-plot(happiness_dag)
